@@ -8,7 +8,7 @@
     align-items: stretch;
     grid-template-areas:
       "navbar navbar navbar navbar navbar"
-      "heroImg heroImg heroImg heroImg heroImg"
+      "wspaceL heroImg heroImg heroImg wspaceR"
       "wspaceL services services services wspaceR"
       "wspaceL services services services wspaceR"
       "wspaceL services services services wspaceR"
@@ -24,11 +24,6 @@
     position: fixed;
     width: 100%;
     margin-top: 0;
-  }
-
-  .navbar-brand {
-    /* border: 1px solid black; */
-    margin-bottom: 0;
   }
 
   .faqBtn {
@@ -48,17 +43,9 @@
     color: black;
   }
   
-  /* .logo { 
-    grid-area: logo; 
-    margin: 0;
-  } */
+  .logo { grid-area: logo; }
   
-  /* .navbuttons {  */
-    /* grid-area: navbuttons; */
-    /* border: 1px solid black; */
-    /* justify-self: center; */
-    /* text-align: right; */
-   /* } */
+  .navbuttons { grid-area: navbuttons; }
   
   .footer { grid-area: footer; }
   
@@ -66,53 +53,7 @@
   
   .wspaceR { grid-area: wspaceR; }
   
-  .heroImg { 
-    grid-area: heroImg;
-    /* border: 1px solid black; */
-    margin-top: 0;
-    padding-bottom: 10em;
-  }
+  .heroImg { grid-area: heroImg; }
   
-  .services { 
-    grid-area: services;
-    margin-left: 5em;
-  }
-
-  .waffleCone{
-    width: 50%;
-    height: auto;
-    margin-left: 7em;
-  }
-
-  .ourStory {
-    margin-left: 6em;
-  }
-
-  .twistedMan {
-    width: 50%;
-    height: auto;
-    margin-left: 7em;
-  }
-
-
-.navBtn {
-  background: none;
-  border: none;
-  border-bottom: 1px solid black;
-  font-size: x-large;
-  cursor: pointer;
-  margin-right: 5%;
-}
-
-.buildingImg {
-  width: 75%;
-  height: auto;
-  border: 1px solid black;
-  margin-top: 0;
-  margin-left: 15%;
-}
-
-.heroInfo {
-  text-align: center;
-  font-size: 300%;
-}
+  .services { grid-area: services; }
+  

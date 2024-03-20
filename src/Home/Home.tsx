@@ -1,5 +1,7 @@
 import "./Home.css";
 import logo from "../Images/twistedLogo.avif";
+import waffleCone from "../Images/WaffleCone.jpg"
+import twistedMan from "../Images/TwitstedStacheMan.jpg"
 
 const Home = () => {
     return (
@@ -10,8 +12,8 @@ const Home = () => {
                         <a className="navbar-brand" href="#">
                             <img src={logo} alt="Twisted Stache" width={100} height={90} />
                         </a>
-                            <a href="#" className="homeBtn">Home</a>
-                            <a href="#" className="faqBtn">FAQ</a>
+                        <a href="#" className="homeBtn">Home</a>
+                        <a href="#" className="faqBtn">FAQ</a>
                     </div>
                 </nav>
 
@@ -21,7 +23,17 @@ const Home = () => {
                     <img className="buildingImg" src="/src/Images/Building.jpg" alt="" />
                 </div>
 
-                <div className="services"> </div>
+                <div className="services">
+                    <div>
+                        <h1 className="ourStory">Our Story</h1>
+                        <a href="/story"><img src={twistedMan} alt="Twisted" className="twistedMan" /></a>
+                    </div>
+
+                    <div>
+                        <h1>Serving Coffee & Hand Dipped Ice Cream</h1>
+                        <a href="#"><img src={waffleCone} alt="Waffle Cone" className="waffleCone" /></a>
+                    </div>
+                </div>
 
                 <div className="wspaceL" />
 
